@@ -1,0 +1,67 @@
+// #main {
+//     @include opacity(0);
+// }
+
+.topbar {
+    @include opacity(0);
+    position: relative;
+    top: -82px;
+}
+
+.menu {
+    @include opacity(0);
+    right: -300rem;   
+}
+
+.opacity-0 {
+    @include opacity(0);
+}
+
+.bullet-left{
+    @include opacity(0);
+    top: -2.8rem;
+}
+.bullet-top{
+    @include opacity(0);
+    left: -9rem;
+}
+
+.animation__masthead--title span{
+    @include opacity(0);
+    left: 4rem;
+    position: relative;
+}
+
+.masthead__title{
+    span {
+        @include opacity(0);
+        position: relative;
+        left: 5rem;
+    }
+    .masthead__title--before {
+        @include opacity(0);
+        top: -1.3rem;
+    }
+    .masthead__title--after {
+        @include opacity(0);
+        left: -2rem;
+    }
+}
+
+.fale-conosco__desc {
+    @include opacity(0);
+    position: relative;
+    top: -.5rem;
+}
+
+.fale-conosco__left{
+    @include opacity(0);
+    position: relative;
+    top: 3rem;
+}
+
+.fale-conosco__info{
+    @include opacity(0);
+    position: relative;
+    top: -.5rem;
+}

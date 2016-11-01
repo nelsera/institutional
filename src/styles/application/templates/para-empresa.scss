@@ -1,0 +1,279 @@
+.para-empresa__masthead{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background: image-url('templates/para-empresa/bg.jpg') 0 0/cover no-repeat;
+    color: white;
+    overflow: hidden;
+
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 4rem;
+        width: auto;
+        right: 4rem;
+        z-index: 0;
+    }
+
+    .bullet-left{
+        content: '';
+        width: 5rem;
+        height: .3rem;
+        background: #fb6d00;
+        display: inline-block;
+        position: absolute;
+        left: .2rem;
+    }
+
+    .bullet-top{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background: image-url('templates/home/bullet.png') 0 0/contain no-repeat;
+        width: 4.6rem;
+        height: 2.7rem;
+        top: 12px;
+    }
+}
+.para-empresa__bg-white{
+    position: relative;
+    background: white;
+}
+
+.para-empresa__title{
+    font-size: 4rem;
+    margin: 9.5rem 0 5rem 10rem;
+    position: relative;
+    font-family: $fontSemiBold;
+}
+
+.para-empresa__badges {
+    position: relative;
+    padding-top: 5rem;
+    background: white;
+}
+.para-empresa__legend{
+    text-align: center;
+    position: relative;
+
+    .para-empresa__badge{
+        width: 6rem;
+        height: 6rem;
+        @include border-radius(50%);
+        border: 1px solid $link;
+        display: inline-block;
+        position: relative;
+        img {
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto; 
+        }
+    }
+
+    p{
+        &:before{
+            content: '';
+            width: 3.5rem;
+            height: .2rem;
+            background: $link;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto; 
+        }
+
+        position: relative;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin: 1.5rem 2.5rem 0;
+        padding-top: 2rem;
+        padding-bottom: 3rem; 
+    }
+}
+
+.para-empresa__video {
+    padding-top: 3rem;
+
+    p {
+        &:first-child{
+            padding-top: 2.5rem;
+            &:before{
+                content: '';
+                width: 4rem;
+                height: .2rem;
+                background: $link;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 4rem;
+            }
+        }
+        position: relative;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding-left: 4rem;  
+        padding-bottom: 2rem;
+    }
+}
+
+.para-empresa__video--left{
+    background:#f5f6f7;
+}
+
+.para-empresa__video--video{
+    float: right;
+    width: 80%;
+    margin-top: 2.8rem;
+    position: relative;
+    padding-bottom: 46.25%;
+    padding-top: 25px;
+    height: 0;
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width: 768px){
+    .para-empresa__video--video{
+        display: none;
+    }
+}
+
+.para-empresa__white {
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.para-empresa__video--title{
+    font-family: $fontThin;
+    text-align: right;
+    color: #909090;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin: 6rem 4rem 0 0;
+}
+
+.para-empresa__contact{
+    position: relative;
+    background:#f5f6f7;
+    padding-top: 3rem;
+
+    p{
+        text-align: right;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding: 0 4rem 0 0; 
+    }
+
+    .btn{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.para-empresa__label{
+    color: #484747;
+    display: block;
+    span{
+        font-family: $fontSemiBold;
+        font-size: 1.3rem;
+        display: block;
+    }
+}
+
+.para-empresa__input--text{
+    background: transparent;
+    border: 1px solid #c2c2c2;
+    @include border-radius(6px);
+    width: 90%;
+    height: 38px;
+    margin-top: .4rem;
+    margin-bottom: 1.2rem;
+    @include box-sizing(border-box);
+    padding: 0 10px;
+    &:focus{
+        border-color: $link;
+        outline-color: $link;
+        background: rgba($link, .1);
+    }
+    &.input--error{
+        background: transparent;
+        border-color: #FF3838;
+        &:focus{
+            border-color: #FF3838;
+            background: rgba(#FF3838, .2);
+            outline-color: #FF3838;
+        }
+    }
+}
+
+.para-empresa__form--message{
+    display: none;
+    text-align: center;
+    margin: 2rem 0 19rem;
+
+    h3{
+        font-size: 1.6rem;
+        margin: 0 0 2rem; 
+    }
+}
+
+@media(max-width: 768px){
+    .para-empresa__legend .para-empresa__badge{
+        width: 60px;
+        height: 60px;
+    }
+    .para-empresa__legend .para-empresa__badge img{
+        width: 40px;
+        height: 40px;
+    }
+    .para-empresa__legend p{
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 15px;
+    }
+    .para-empresa__video--left{
+        background: none;
+    }
+    .para-empresa__video p{
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .para-empresa__video p:first-child:before{
+        display: none;
+    }
+    .para-empresa__contact{
+        background: none;
+    }
+
+    .para-empresa__contact p{
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 4rem 0 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .para-empresa__label span{
+        font-size: 14px;
+    }
+    .para-empresa__input--text{
+        width: 100%;
+    }
+}

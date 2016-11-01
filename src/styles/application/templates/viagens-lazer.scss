@@ -1,0 +1,189 @@
+.viagens-lazer__masthead{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background: image-url('templates/viagens-lazer/bg.jpg') 0 0/cover no-repeat;
+    color: white;
+    overflow: hidden;
+
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 4rem;
+        width: auto;
+        right: 4rem;
+        z-index: 0;
+    }
+
+    .bullet-left{
+        content: '';
+        width: 5rem;
+        height: .3rem;
+        background: #fb6d00;
+        display: inline-block;
+        position: absolute;
+        left: .2rem;
+    }
+
+    .bullet-top{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background: image-url('templates/home/bullet.png') 0 0/contain no-repeat;
+        width: 4.6rem;
+        height: 2.7rem;
+        top: 12px;
+    }
+}
+
+.viagens-lazer__title{
+    font-size: 4rem;
+    margin: 9.5rem 0 5rem 10rem;
+    position: relative;
+    font-family: $fontSemiBold;
+}
+
+.viagens-lazer__info {
+    position: relative;
+    background: white;
+}
+
+.viagens-lazer__info--left {
+    background: #f5f6f7;
+    padding-top: 6rem !important;
+    padding-bottom: 8rem !important;
+}
+
+.viagens-lazer__info--right {
+    padding-top: 6rem !important;
+    p {
+        &:first-child{
+            padding-top: 2.5rem;
+            &:before{
+                content: '';
+                width: 4rem;
+                height: .2rem;
+                background: $link;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 4rem;
+            }
+        }
+        position: relative;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding-left: 4rem; 
+        padding-bottom: 2rem;
+    }
+}
+
+.viagens-lazer__contact{
+    position: relative;
+    background: #f5f6f7;
+    padding-bottom: 6rem;
+
+    h2{
+        font-family: $fontThin;
+        text-align: right;
+        color: #909090;
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin: 4rem 4rem 0 0;
+    }
+
+    p{
+        text-align: right;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding: 2rem 4rem 0 0; 
+    }
+    .btn{
+        margin-top: 1rem;
+    }
+}
+
+.viagens-lazer__image--top{
+    text-align: right;
+    position: relative;
+}
+@media(max-width: 768px){
+    .viagens-lazer__image--top{
+        display: none;
+    }
+}
+
+.viagens-lazer__form {
+    padding-top: 4rem;
+}
+
+.viagens-lazer__label{
+    color: #484747;
+    display: block;
+    span{
+        font-family: $fontSemiBold;
+        font-size: 1.3rem;
+        display: block;
+    }
+}
+
+.viagens-lazer__input--text{
+    background: transparent;
+    border: 1px solid #c2c2c2;
+    @include border-radius(6px);
+    width: 90%;
+    height: 38px;
+    margin-top: .4rem;
+    margin-bottom: 1.2rem;
+    @include box-sizing(border-box);
+    padding: 0 10px;
+    &:focus{
+        border-color: $link;
+        outline-color: $link;
+        background: rgba($link, .1);
+    }
+    &.input--error{
+        background: transparent;
+        border-color: #FF3838;
+        &:focus{
+            border-color: #FF3838;
+            background: rgba(#FF3838, .2);
+            outline-color: #FF3838;
+        }
+    }
+}
+
+.viagens-lazer__form--message{
+    display: none;
+    text-align: center;
+    margin: 2rem 0 19rem;
+
+    h3{
+        font-size: 1.6rem;
+        margin: 0 0 2rem; 
+    }
+}
+
+@media(max-width: 768px){
+    .viagens-lazer__info--left{
+        display: none;
+    }
+    .viagens-lazer__info--right p{
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 0;
+    }
+    .viagens-lazer__contact{
+        background: none;
+    }
+    .viagens-lazer__contact h2, .viagens-lazer__contact p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .viagens-lazer__label span{
+        font-size: 14px;
+    }
+    .viagens-lazer__input--text{
+        width: 100%;
+    }
+}

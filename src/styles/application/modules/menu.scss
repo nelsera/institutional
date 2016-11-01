@@ -1,0 +1,164 @@
+.menu {
+    position: fixed;
+    width: 30rem;
+    min-height: 44rem;
+    height: 100%;
+    background: #0a2529;
+    z-index: 5000;
+    top: 0;
+    right: 0;
+}
+
+.menu__close{
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: right;   
+}
+.menu__close--link{
+    color: $link;
+    font-size: 1.6rem;
+
+    &:hover, &:focus, &:active{
+        color: white;
+    }
+
+    .btn-close{
+        @extend .icons-close;
+        display: inline-block;
+        margin-left: .5rem;
+    }
+}
+
+.menu__list{
+    list-style: none;
+    margin: 0;
+    padding: 2.5rem 0 0 0;
+}
+.menu__item{
+    display: block;
+    padding-bottom: 1.4rem;
+}
+.menu__link{
+    @include transition(all 0.5s ease);
+    color: #bbbdbd;
+    font-size: 1.6rem;
+    padding-left: 2.5rem;
+    position: relative;
+    display: block;
+
+    &:before{
+        @include transition(all 0.5s ease);
+        content: '';
+        width: .2rem;
+        height: 100%;
+        background: transparent;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+
+    &:hover,&:focus, &:active, &.active{
+        color: white;
+        &:before{
+            background: $link; 
+        }
+    }
+}
+
+.menu__bottom{
+    position: absolute;
+    left: 2.5rem;
+    bottom: 2.5rem;
+}
+.menu__info{
+    color: white;
+    padding: 0 0 .5rem;
+    font-size: 1.3rem;
+    font-family: $fontRegular;
+    margin: 0;
+    &:last-child{
+        padding-bottom: 0;
+    }
+}
+.menu__info:first-child:before{
+    content: '';
+    width: 3rem;
+    height: .2rem;
+    background: $link;
+    display: inline-block;
+    position: absolute;
+    top: -2rem;
+    left: 0; 
+}
+.menu__info a{
+    color: white;
+    &:hover,&:focus,&:active{
+        color: $link;
+    }
+}
+
+@include tablet{
+    .topbar__logo{
+        right: 0;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu__item{
+        margin-bottom: 20px;
+    }
+    .menu__link{
+        font-size: 22px;
+        padding-left: 25px;
+    }
+    .menu__bottom{
+        left: 25px;
+        bottom: 25px;
+    }
+    .menu__info{
+        font-size: 16px;
+    }
+    .menu__close{
+        padding: 25px;
+    }
+    .menu__close--link .btn-close{
+        position: relative;
+        top: 2px;
+    }
+    .menu__close--link{
+        font-size: 20px;
+    }
+    .menu__link:before{
+        width: 3px;
+    }
+}
+
+.menu__item--mobile{
+    display: none;
+}
+@media(max-width: 768px){
+    .topbar__contact,
+    .topbar__login {
+        display: none;
+    }
+    .menu__item--mobile{
+        display: block;
+    }
+}
+@media(max-width: 320px){
+    .menu__close{
+        padding-bottom: 1.0rem;
+        font-size: 18px;
+    }
+    .menu__item{
+        margin-bottom: 0;
+        padding-bottom: 3.5rem;
+    }
+    .menu__link{
+        font-size: 20px;
+    }
+    .menu__info{
+        font-size: 14px;
+    }
+}

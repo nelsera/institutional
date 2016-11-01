@@ -1,0 +1,243 @@
+.para-viagem__masthead{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background: image-url('templates/para-viagem/bg.jpg') 0 0/cover no-repeat;
+    color: white;
+    overflow: hidden;
+
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 4rem;
+        width: auto;
+        right: 4rem;
+        z-index: 0;
+    }
+
+    .bullet-left{
+        content: '';
+        width: 5rem;
+        height: .3rem;
+        background: #fb6d00;
+        display: inline-block;
+        position: absolute;
+        left: .2rem;
+    }
+
+    .bullet-top{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background: image-url('templates/home/bullet.png') 0 0/contain no-repeat;
+        width: 4.6rem;
+        height: 2.7rem;
+        top: 12px;
+    }
+}
+
+.para-viagem__title{
+    font-size: 4rem;
+    margin: 9.5rem 0 5rem 10rem;
+    position: relative;
+    font-family: $fontSemiBold;
+}
+
+.para-viagem__desc{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    a{
+        color:$link;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid $link;
+        }
+    }
+}
+
+.para-viagem__gray{
+    background:#f5f6f7;
+}
+.para-viagem__white{
+    background: white;
+    position: relative;
+}
+
+.para-viagem__subtitle{
+    &:before{
+        content: '';
+        width: 3.5rem;
+        height: .2rem;
+        background: $link;
+        display: inline-block;
+        position: absolute;
+        bottom: -1.5rem;
+        left: 0; 
+    }
+    margin: 0;
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-family: $fontSemiBold; 
+}
+.para-viagem__services{
+    background: white;
+    z-index: 1;
+    position: relative;
+}
+
+.para-viagem__services>.col-md-1,
+.para-viagem__services>.col-md-5,
+.para-viagem__services>.col-md-6{
+    padding-top: 3rem;
+}
+
+.para-viagem__image--top{
+    text-align: right;
+    position: relative;
+    top: 5.5rem;
+    .para-viagem__image--top-after{
+        content:'';
+        position: absolute;
+        left: 0.4rem;
+        top: -3.5rem;
+        background: #b7f1fc;
+        width: 3.5rem;
+        height: 3.5rem;
+        z-index: 1;
+    } 
+}
+
+.para-viagem__image--bottom{
+    position: relative;
+    margin-bottom: 7rem !important;
+    .para-viagem__image--bottom-after{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        right: -3rem;
+        bottom: -3rem;
+        background: #b7f1fc;
+        width: 3rem;
+        height: 3rem;
+        z-index: 1;
+    } 
+}
+@media(max-width: 768px){
+    .para-viagem__image--top,
+    .para-viagem__image--bottom{
+        display: none;
+    }
+}
+
+.para-viagem__bottom{
+    padding-top: 5rem !important;
+}
+
+.para-viagem__form {
+    ::-webkit-input-placeholder {
+       font-style: italic;
+       color: #4e5254;
+       font-size: 1.2rem;
+       @include opacity(.4);
+    }
+
+    :-moz-placeholder { 
+       font-style: italic;
+       color: #4e5254;
+       font-size: 1.2rem;
+       @include opacity(.4);  
+    }
+
+    ::-moz-placeholder {
+       font-style: italic;
+       color: #4e5254;
+       font-size: 1.2rem;
+       @include opacity(.4);  
+    }
+
+    :-ms-input-placeholder {  
+       font-style: italic;
+       color: #4e5254;
+       font-size: 1.2rem;
+       @include opacity(.4);  
+    }
+}
+
+.para-viagem__input--text{
+    font-size: 1.2rem;
+    background: transparent;
+    border: 1px solid #d5d5d5;
+    @include border-radius(6px);
+    width: 94%;
+    height: 2.851rem;
+    @include box-sizing(border-box);
+    padding: 0 10px;
+    &:focus{
+        border-color: $link;
+        outline-color: $link;
+        background: rgba($link, .1);
+    }
+    &.input--error{
+        background: transparent;
+        border-color: #FF3838;
+        &:focus{
+            border-color: #FF3838;
+            background: rgba(#FF3838, .2);
+            outline-color: #FF3838;
+        }
+    }
+}
+
+.para-viagem__form--message{
+    display: none;
+    
+    h3{
+        font-family: $fontRegular;
+        font-size: 1.2rem;
+        margin: 0 0 1.5rem; 
+    }
+}
+
+@media(max-width: 768px){
+    .para-viagem__services{
+        margin-bottom: 15px;
+    }
+    .para-viagem__subtitle{
+        font-size: 16px;
+    }
+    .para-viagem__subtitle:before{
+        display: none;
+    }
+    .para-viagem__desc{
+        font-size: 16px;
+        line-height: 22px;   
+    }
+    .para-viagem__input--text{
+        width: 100% !important;
+        border-radius: 4px;
+        height: 30px;
+        font-size: 14px;
+        padding: 0 8px;
+        margin-bottom: 12px;
+    }
+    .para-viagem__form {
+        ::-webkit-input-placeholder {
+           font-size: 14px;
+        }
+
+        :-moz-placeholder { 
+           font-size: 14px;  
+        }
+
+        ::-moz-placeholder {
+           font-size: 14px;  
+        }
+
+        :-ms-input-placeholder {  
+           font-size: 14px;  
+        }
+    }
+}

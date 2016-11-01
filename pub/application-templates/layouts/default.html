@@ -1,0 +1,57 @@
+<div class="menu">
+    <div class="menu__close">
+        <a href="#" title="Fechar" class="menu__close--link">FECHAR <i class="btn-close"></i></a>
+    </div>
+    <ul class="menu__list">
+        <li class="menu__item"><a href="{{config.urls.site}}#" class="menu__link">Home</a></li>
+        <li class="menu__item"><a href="{{config.urls.site}}#para-viagem" class="menu__link">Para sua viagem</a></li>
+        <li class="menu__item"><a href="{{config.urls.site}}#para-empresa" class="menu__link">Para sua empresa</a></li>
+        <li class="menu__item"><a href="http://travelplustur.com.br/blog/" class="menu__link" target="_blank">Blog</a></li>
+        <li class="menu__item"><a href="{{config.urls.site}}#viagens-lazer" class="menu__link">Viagens lazer</a></li>
+        <li class="menu__item"><a href="{{config.urls.site}}#sobre" class="menu__link">Sobre</a></li>
+        <li class="menu__item menu__item--mobile"><a href="{{config.urls.site}}#fale-conosco" class="menu__link">Fale conosco</a></li>
+        <li class="menu__item menu__item--mobile"><a href="{{config.urls.site}}#acesso" class="menu__link">Área do cliente</a></li>
+    </ul>
+
+    <div class="menu__bottom">
+        <p class="menu__info">(11) 3549-5050</p>
+        <p class="menu__info"><a href="mailto:tpt@travelplustur.com.br" title="Mande um e-mail">tpt@travelplustur.com.br</a></p>
+        <p class="menu__info">Rua Luís Coelho, 340 • cj. 31<br>Bela Vista • São Paulo - SP</p>
+    </div>
+</div>
+
+<header class="topbar">
+    <div class="animation">
+        <h1 class="topbar__logo">
+            <a tabindex="1" hel="home" href="{{config.urls.site}}#" title="Ir para a pagina inicial" class="topbar__logo--link"><img src="{{config.urls.site}}images/modules/topbar/travelplus.gif" alt="" width="" height=""></a>
+        </h1>
+
+        <div class="topbar__menubutton"><a href="#" title="Clique para expandir" class="topbar__menubutton--login"><span></span><span></span><span></span></a></div>
+        <button class="topbar__login" onclick="window.location=&quot;#acesso&quot;" title="Área do cliente">Área do cliente</button>
+        <h3 class="topbar__contact"><a href="#fale-conosco" title="Fale conosco" class="topbar__contact--link">Fale conosco</a></h3>
+    </div>
+</header>
+
+
+<div id="content">
+    {{{content_for_layout}}}
+</div>
+
+
+<footer class="notes">
+    <ul class="notes__socials">
+        <li><a tabindex="80" class="note__socials--link facebook" href="https://www.facebook.com/pages/Travel-Plus-Turismo/128410773977347" title="Abrir Travel Plus Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a tabindex="81" class="note__socials--link linkedin" href="https://www.linkedin.com/company/travel-plus-turismo" title="Abrir Travel Plus no LinkdIn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a tabindex="82" class="note__socials--link twitter" href="https://twitter.com/TravelPlusTur" title="Abrir Travel Plus no Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a tabindex="83" class="note__socials--link youtube" href="#" title="Abrir Travel Plus no YoutTube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        <li><a tabindex="84" class="note__socials--link google" href="#" title="Abrir Travel Plus no Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    </ul>
+
+    <p>Copyright © 2016 • Travel Plus Turismo  •  todos os direitos reservados</p>
+</footer>
+
+<div id="fancyboxModal" class="fancyboxModal">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/MThQiRoV2ac" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="back-top" title="Voltar ao topo"><div class="back-top__button"></div></div>

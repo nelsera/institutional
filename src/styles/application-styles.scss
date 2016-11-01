@@ -1,0 +1,34 @@
+// compass libs
+@import 'compass/css3',
+        'compass/css3/user-interface',
+        'compass/layout',
+        'compass/typography/text',
+        'compass/utilities';
+
+
+// vendors
+@import 'CSS:../scripts/vendors/bootstrap/dist/css/bootstrap';
+
+
+// resources
+@import 'application/resources/functions',
+        'application/resources/variables',
+        'application/resources/sprites';
+
+// base
+@import 'application/skel';
+
+@import 'application/modules/topbar',
+        'application/modules/modal',
+        'application/modules/menu';
+
+//templates
+@import 'application/templates/home',
+        'application/templates/fale-conosco',
+        'application/templates/acesso',
+        'application/templates/para-empresa',
+        'application/templates/para-viagem',
+        'application/templates/sobre',
+        'application/templates/viagens-lazer';        
+
+@import 'application/resources/animations';

@@ -1,0 +1,251 @@
+.sobre__masthead{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background: image-url('templates/sobre/bg.jpg') 0 0/cover no-repeat;
+    color: white;
+    overflow: hidden;
+
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 4rem;
+        width: auto;
+        right: 4rem;
+        z-index: 0;
+    }
+
+    .bullet-left{
+        content: '';
+        width: 5rem;
+        height: .3rem;
+        background: #fb6d00;
+        display: inline-block;
+        position: absolute;
+        left: .2rem;
+    }
+
+    .bullet-top{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background: image-url('templates/sobre/bullet.png') 0 0/contain no-repeat;
+        width: 4.6rem;
+        height: 2.7rem;
+        top: 12px;
+    }
+}
+
+.sobre__title{
+    font-size: 4rem;
+    margin: 9.5rem 0 5rem 10rem;
+    position: relative;
+    font-family: $fontSemiBold;
+}
+
+.sobre__video{
+    position: relative;
+    background: white;
+    padding-top: 3rem;
+
+    p{
+        &:first-child{
+            &:before{
+                content: '';
+                width: 3.5rem;
+                height: .2rem;
+                background: $link;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0; 
+            }
+        }
+
+        margin: 0;
+        position: relative;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 2rem 0 0;
+    }
+}
+
+.sobre__videoWrapper{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.sobre__carousel{
+    position: relative;
+    background: white;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+
+    h2{
+        &:before{
+            content: '';
+            width: 3.5rem;
+            height: .2rem;
+            background: $link;
+            display: inline-block;
+            position: absolute;
+            bottom: -1rem;
+            left: 0; 
+        }
+        margin: 0;
+        position: relative;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        font-family: $fontSemiBold; 
+    }
+    ul{
+        list-style: none;
+        margin: 4rem 0 0 0;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+        width: 14.285%;
+        margin: 0;
+        text-align: center;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    a{
+        display: block;
+    }
+}
+
+.sobre__contact{
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    background: image-url('templates/sobre/bg-bottom.jpg') 0 0/cover no-repeat;
+    padding-top: 3rem;
+
+    h2{
+        font-family: $fontThin;
+        text-align: right;
+        color: $link;
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin: 0 4rem 0 0;
+    }
+    p{
+        text-align: right;
+        color: white;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        padding: 6rem 4rem 0 0;
+        position: relative;
+        &:before{
+            content: '';
+            width: 3.5rem;
+            height: .2rem;
+            background: $link;
+            display: inline-block;
+            position: absolute;
+            top: 3.5rem;
+            right: 4rem;
+        }
+    }
+}
+
+.sobre__label{
+    color: white;
+    display: block;
+    span{
+        font-family: $fontSemiBold;
+        font-size: 1.3rem;
+        display: block;
+    }
+}
+
+.sobre__input--text{
+    background: transparent;
+    border: 1px solid #c2c2c2;
+    @include border-radius(6px);
+    width: 90%;
+    height: 38px;
+    margin-top: .4rem;
+    margin-bottom: 1.2rem;
+    @include box-sizing(border-box);
+    padding: 0 10px;
+    &:focus{
+        border-color: $link;
+        outline-color: $link;
+        background: rgba($link, .1);
+    }
+    &.input--error{
+        background: transparent;
+        border-color: #FF3838;
+        &:focus{
+            border-color: #FF3838;
+            background: rgba(#FF3838, .2);
+            outline-color: #FF3838;
+        }
+    }
+}
+
+.sobre__form--message{
+    display: none;
+    text-align: center;
+    margin: 2rem 0 19rem;
+
+    h3{
+        color: white;
+        font-size: 1.6rem;
+        margin: 0 0 2rem; 
+    }
+}
+
+@media(max-width: 768px){
+    .sobre__video p{
+        font-size: 16px;
+        line-height: 22px;
+        padding: 5px 0;
+    }
+    .sobre__videoWrapper{
+        margin-top: 10px;
+    }
+    .sobre__carousel h2{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .sobre__carousel li{
+        width: 50%; 
+    }
+    .sobre__contact{
+        height: auto;
+        padding-bottom: 12px;
+    }
+    .sobre__contact h2,.sobre__contact p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .sobre__form.sobre__form--box{
+        padding: 0 10px; 
+    }
+    .sobre__label span{
+        font-size: 14px;
+    }
+    .sobre__input--text{
+        width: 100%;
+    }
+}
