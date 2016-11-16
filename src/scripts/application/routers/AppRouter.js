@@ -8,7 +8,8 @@ define([
     'application/views/ParaEmpresa',
     'application/views/ParaViagem',
     'application/views/Sobre',
-    'application/views/ViagemLazer'
+    'application/views/ViagemLazer',
+    'application/views/ViagensDeLazer'
 ], function (scope, Marionette, Home) {
     'use strict';
     var ApplicationController = Marionette.Controller.extend({
@@ -17,29 +18,33 @@ define([
             scope.app.execute('page:load', url, scope.views.Home);
         },
         acesso: function () {
-            var url = '/';
+            var url = '/acesso';
             scope.app.execute('page:load', url, scope.views.Acesso);
         },
         faleConosco: function () {
-            var url = '/';
+            var url = '/fale-conosco';
             scope.app.execute('page:load', url, scope.views.FaleConosco);
         },
         paraEmpresa: function () {
-            var url = '/';
+            var url = '/para-empresa';
             scope.app.execute('page:load', url, scope.views.ParaEmpresa);
         },
         paraViagem: function () {
-            var url = '/';
+            var url = '/para-viagem';
             scope.app.execute('page:load', url, scope.views.ParaViagem);
         },
         sobre: function () {
-            var url = '/';
+            var url = '/sobre';
             scope.app.execute('page:load', url, scope.views.Sobre);
         },
         viagemLazer: function () {
-            var url = '/';
+            var url = '/viagem-lazer';
             scope.app.execute('page:load', url, scope.views.ViagemLazer);
         },
+        viagensDeLazer: function () {
+            var url = '/viagens-de-lazer';
+            scope.app.execute('page:load', url, scope.views.ViagensDeLazer);
+        }
     });
     return scope.register('routers.AppRouter', Marionette.AppRouter.extend({
         controller: new ApplicationController(),
@@ -50,7 +55,8 @@ define([
             'para-empresa(/)': 'paraEmpresa',
             'para-viagem(/)': 'paraViagem',
             'sobre(/)': 'sobre',
-            'viagens-lazer(/)': 'viagemLazer'
+            'viagens-lazer(/)': 'viagemLazer',
+            'viagens-de-lazer(/)': 'viagensDeLazer'
         }
     }));
 });

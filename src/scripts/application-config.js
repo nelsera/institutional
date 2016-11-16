@@ -14,7 +14,10 @@ require.config({
         skrollr: 'vendors/skrollr/src/skrollr',
         modal: 'vendors/fancybox/source/jquery.fancybox',
         validation: 'vendors/jquery-validation/dist/jquery.validate.min',
-        mask: 'vendors/jquery-mask-plugin/dist/jquery.mask.min'
+        mask: 'vendors/jquery-mask-plugin/dist/jquery.mask.min',
+        chosen: 'vendors/chosen/chosen.jquery',
+        firebase: 'vendors/firebase/firebase',
+        handlebars: 'vendors/handlebars/handlebars.min'
     },
     shim: {
         easing: ['jquery'],
@@ -23,6 +26,7 @@ require.config({
         imagesloaded: ['jquery'],
         modal: ['jquery'],
         validation: ['jquery'],
-        mask: ['jquery']
+        mask: ['jquery'],
+        chosen: ['jquery']
     }
 });

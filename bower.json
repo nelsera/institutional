@@ -20,7 +20,10 @@
     "skrollr": "^0.6.30",
     "fancybox": "~2.1.5",
     "jquery-validation": "jquery.validation#~1.14.0",
-    "jquery-mask-plugin": "jQuery-Mask-Plugin#~1.13.4"
+    "jquery-mask-plugin": "jQuery-Mask-Plugin#~1.13.4",
+    "chosen": "^1.6.2",
+    "firebase": "^3.5.3",
+    "handlebars": "^4.0.5"
   },
   "devDependencies": {},
   "authors": [

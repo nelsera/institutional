@@ -13,7 +13,8 @@
 // resources
 @import 'application/resources/functions',
         'application/resources/variables',
-        'application/resources/sprites';
+        'application/resources/sprites',
+        'application/resources/chosen';
 
 // base
 @import 'application/skel';
@@ -29,6 +30,7 @@
         'application/templates/para-empresa',
         'application/templates/para-viagem',
         'application/templates/sobre',
-        'application/templates/viagens-lazer';        
+        'application/templates/viagens-lazer',
+        'application/templates/viagens-de-lazer';        
 
 @import 'application/resources/animations';
