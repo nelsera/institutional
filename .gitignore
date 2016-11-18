@@ -11,5 +11,6 @@
 node_modules/
 npm-debug.log
 src/scripts/vendors/
+pub/
 .tmp/
 .sass-cache/
