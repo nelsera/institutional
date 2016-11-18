@@ -56,7 +56,7 @@ define([
             'para-viagem(/)': 'paraViagem',
             'sobre(/)': 'sobre',
             'viagens-lazer(/)': 'viagemLazer',
-            'viagens-de-lazer(/)': 'viagensDeLazer'
+            'viagens-de-lazer(/)(:id)': 'viagensDeLazer'
         }
     }));
 });
