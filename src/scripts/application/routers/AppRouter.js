@@ -9,7 +9,8 @@ define([
     'application/views/ParaViagem',
     'application/views/Sobre',
     'application/views/ViagemLazer',
-    'application/views/ViagensDeLazer'
+    'application/views/ViagensDeLazer',
+    'application/views/ViagensDeLazerInterna'
 ], function (scope, Marionette, Home) {
     'use strict';
     var ApplicationController = Marionette.Controller.extend({
@@ -43,7 +44,12 @@ define([
         },
         viagensDeLazer: function () {
             var url = '/viagens-de-lazer';
+
             scope.app.execute('page:load', url, scope.views.ViagensDeLazer);
+        },
+        viagemInterna: function(viagem) {
+            var url = '/viagem/'+viagem;
+            scope.app.execute('page:load', url, scope.views.ViagensDeLazerInterna, {viagem:viagem});
         }
     });
     return scope.register('routers.AppRouter', Marionette.AppRouter.extend({
@@ -56,7 +62,8 @@ define([
             'para-viagem(/)': 'paraViagem',
             'sobre(/)': 'sobre',
             'viagens-lazer(/)': 'viagemLazer',
-            'viagens-de-lazer(/)(:id)': 'viagensDeLazer'
+            'viagem-de-lazer(/)(:id)': 'viagensDeLazer',
+            'viagem(/):viagem': 'viagemInterna'
         }
     }));
 });
