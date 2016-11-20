@@ -49,15 +49,15 @@ define([
                         });
                     }
 
-                    var distance = $('.viagens-lazer__masthead').offset().top,
+                    var distance = $('.viagens-de-lazer__masthead').offset().top,
                         $window = $(window);
 
                     $window.scroll(function() {
                         if ( $window.scrollTop() >= distance ) {
-                            $('.viagens-lazer__masthead').addClass('fixed');
-                            $('#content').css('padding-top', $('.viagens-lazer__masthead').css('height'));
+                            $('.viagens-de-lazer__masthead').addClass('fixed');
+                            $('#content').css('padding-top', $('.viagens-de-lazer__masthead').css('height'));
                         } else {
-                            $('.viagens-lazer__masthead').removeClass('fixed');
+                            $('.viagens-de-lazer__masthead').removeClass('fixed');
                             $('#content').css('padding-top', 0);
                         }
                     });
@@ -66,6 +66,27 @@ define([
                     $('.bullet-left').delay(600).animate({opacity: 1, filter:1, top: '-1.4rem'}, 400, 'easeOutQuad');
                     $('.bullet-top').delay(600).animate({opacity: 1, filter:1, left: '-4.5rem'}, 400, 'easeOutQuad');
                     $('.animation__masthead--title span').delay(600).animate({opacity: 1, filter:1, left: '0'}, 400, 'easeOutQuad');
+
+                    $(window).ready(function($) {
+                        firebase.database().ref('ofertas/'+me.options.viagem).once('value', function(snap) {
+                          console.log( snap.val() );
+
+
+                          $('.viagens-lazer__title span').html(snap.val().titulo);
+                          $('.viagens-de-lazer__masthead').css('background', 'url(\'' + snap.val().foto_destino + '\') 0 0/cover no-repeat');
+                          $('.descricao_oferta').html(snap.val().descricao_oferta);
+                          $('.preco').html('R$ ' + snap.val().preco + ',00');
+                          $('.descricao_destino').html( snap.val().descricao_destino);
+
+                          (snap.val().hoteis).forEach(function(value, index){
+                            $('[data-hotel=\''+index+'\']')
+                                .find('.short-img-hotel img').attr('src', value.foto_hotel).end()
+                                .find('h4').html( value.nome_hotel).end()
+                                .find('p').html( 'R$ '+value.preco_hotel+' a diária por pessoa').end()
+                                .removeClass('hide');
+                          });
+                        });
+                    });
                 });
             }
         })

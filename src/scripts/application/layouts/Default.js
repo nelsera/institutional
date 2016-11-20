@@ -93,11 +93,9 @@ define([
             });
             $('#main').imagesLoaded()
                 .always( function( instance ) {
-                    setTimeout(function (){
-                        $('#loader').slideUp('fast', function(){
-                            $page();           
-                        });
-                    },1666);
+                    $('#loader').slideUp('fast', function(){
+                        $page();           
+                    });
                 });
         },
         modal: function (url, args, callback) {

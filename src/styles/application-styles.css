@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -12941,12 +12942,63 @@ a, button {
     width: 100%;
   }
 }
-/* line 2, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 1, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer__masthead {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  color: white;
+  overflow: hidden;
+}
+/* line 8, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer__masthead.fixed {
+  position: fixed;
+  top: 0;
+  left: 4rem;
+  width: auto;
+  right: 4rem;
+  z-index: 0;
+}
+/* line 17, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer__masthead .bullet-left {
+  content: '';
+  width: 5rem;
+  height: .3rem;
+  background: #fb6d00;
+  display: inline-block;
+  position: absolute;
+  left: .2rem;
+}
+/* line 27, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer__masthead .bullet-top {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: url('../images/templates/home/bullet.png?1479245647') 0 0/contain no-repeat;
+  width: 4.6rem;
+  height: 2.7rem;
+  top: 12px;
+}
+/* line 36, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer__masthead .viagens-lazer__title {
+  width: 40%;
+}
+/* line 39, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer__masthead .viagens-lazer__title span {
+  text-transform: uppercase;
+  text-shadow: 0.01em 0.01em 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 45, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer {
+  min-height: 600px;
+}
+/* line 48, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer div[class*="col-md-"] {
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 6, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 52, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer h2 {
   color: #7d7e7e;
   font-size: 32.52px;
@@ -12954,45 +13006,48 @@ a, button {
   text-align: left;
   margin-top: 30px;
 }
-/* line 13, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 59, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .viagens-de-lazer__busca {
   color: #7d7e7e;
   margin-top: 30px;
   font-size: 18px;
 }
-/* line 17, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 63, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .viagens-de-lazer__busca p {
   float: right;
 }
-/* line 20, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 66, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .viagens-de-lazer__busca .busca-texto {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 25, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 71, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .col-md-4 {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
-/* line 28, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 74, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post {
   margin-top: 25px;
 }
-/* line 30, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 76, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post h3 {
   text-align: center;
   color: #3f3f3f;
   font-size: 22px;
+  line-height: 25px;
+  height: 50px;
+  overflow: hidden;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 38, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 87, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post .short-img {
   width: 100%;
   height: 230px;
   position: relative;
 }
-/* line 42, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 91, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post .short-img img {
   position: absolute;
   top: 0;
@@ -13000,21 +13055,25 @@ a, button {
   bottom: 0;
   left: 0;
   margin: auto;
+  border-radius: 2px;
 }
-/* line 51, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 101, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post p {
   text-align: center;
   margin-top: 15px;
 }
-/* line 55, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 105, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post .info {
   color: #3f3f3f;
   font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
   font-weight: 300;
   display: block;
   margin-bottom: 15px;
 }
-/* line 62, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 115, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post .price {
   color: #3f3f3f;
   font-size: 18px;
@@ -13023,21 +13082,35 @@ a, button {
   display: block;
   margin-top: 15px;
 }
-/* line 69, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 122, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post .get-more {
   margin-top: 25px;
   display: inline-block;
-  background-color: #31d1e6;
+  background-color: #31d1e8;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   width: 170px;
   height: 38px;
   color: white;
   border-radius: 4px;
+  position: relative;
+  transition: all .0s ease;
 }
-/* line 77, ../../src/styles/application/templates/viagens-de-lazer.scss */
+/* line 134, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .short-post .get-more:hover {
+  border: 0;
+  top: 1px;
+}
+/* line 138, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .short-post .get-more:focus, .viagens-de-lazer .short-post .get-more:active {
+  outline: 0;
+  border-color: white;
+}
+/* line 143, ../../src/styles/application/templates/viagens-de-lazer.scss */
 .viagens-de-lazer .short-post .get-more span {
   display: block;
   text-transform: uppercase;
   color: white;
+  text-shadow: 0 0 10px #31d1e8;
   font-size: 16.64px;
   /* Approximation due to font substitution */
   font-weight: 300;
@@ -13045,6 +13118,252 @@ a, button {
   /* Approximation due to font substitution */
   transform: scaleX(1.0272);
   /* width and height properties ommitted due to transform */
+}
+/* line 156, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .col-preco {
+  text-align: right;
+  color: #31d1e8;
+  font-size: 32.52px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+/* line 163, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .internal-title {
+  color: #31d1e8;
+}
+/* line 166, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .descricao_destino {
+  color: #797979;
+  font-size: 18px;
+}
+/* line 170, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .select-hotel {
+  margin-top: 10px;
+}
+/* line 173, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .select-hotel h4 {
+  font-size: 18px;
+  color: #797979;
+  font-weight: bold;
+}
+/* line 178, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .select-hotel p {
+  font-size: 18px;
+  color: #797979;
+}
+/* line 183, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .short-img-hotel {
+  width: 200px;
+  height: 130px;
+  position: relative;
+  float: left;
+  margin-right: 25px;
+  overflow: hidden;
+}
+/* line 190, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer .short-img-hotel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* line 198, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:not(:checked),
+[type="checkbox"].checkbox:checked {
+  position: absolute;
+  left: -9999px;
+  user-select: none;
+}
+
+/* line 204, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:not(:checked) + label,
+[type="checkbox"].checkbox:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  user-select: none;
+  float: right;
+  margin-top: 35px;
+}
+
+/* checkbox aspect */
+/* line 215, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:not(:checked) + label:before,
+[type="checkbox"].checkbox:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #aaa;
+  background: transparent;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+
+/* checked mark aspect */
+/* line 229, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:not(:checked) + label:after,
+[type="checkbox"].checkbox:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  font-size: 30px;
+  line-height: 0.8;
+  color: #31d1e8;
+  transition: all .2s;
+  outline: 0;
+}
+
+/* checked mark aspect changes */
+/* line 242, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* line 246, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* disabled checkbox */
+/* line 251, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:disabled:not(:checked) + label:before,
+[type="checkbox"].checkbox:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* line 258, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:disabled:checked + label:after {
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* line 262, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:disabled + label {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* accessibility */
+/* line 267, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:checked:focus + label:before,
+[type="checkbox"].checkbox:not(:checked):focus + label:before {
+  border: 1px dotted #31d1e8;
+}
+
+/* hover style just for information */
+/* line 273, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox:not(:disabled) + label:hover:before {
+  border: 1px solid #31d1e8 !important;
+}
+
+/* line 277, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox.error:not(:disabled) + label:before {
+  border: 1px solid #f05c58 !important;
+}
+
+/* line 280, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox.error:not(:disabled) + label {
+  color: #f05c58;
+}
+
+/* line 284, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox.valid:not(:disabled) + label:before {
+  border: 1px solid #A1CF17 !important;
+}
+
+/* line 287, ../../src/styles/application/templates/viagens-de-lazer.scss */
+[type="checkbox"].checkbox.valid:checked + label:after,
+[type="checkbox"].checkbox.valid:not(:disabled) + label {
+  color: #A1CF17;
+}
+
+/* line 292, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__contact {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  background: #eee;
+  padding-top: 3rem;
+}
+/* line 299, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__contact h2 {
+  font-family: proxima_novathin;
+  text-align: right;
+  color: #909090;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  margin: 6rem 4rem 0 0;
+  text-transform: uppercase;
+}
+
+/* line 310, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__label {
+  color: #484747;
+  display: block;
+}
+/* line 313, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__label span {
+  font-family: "proxima_novasemibold";
+  font-size: 1.3rem;
+  display: block;
+}
+
+/* line 320, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__input--text {
+  background: transparent;
+  border: 1px solid #c2c2c2;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  width: 100%;
+  height: 38px;
+  margin-top: .4rem;
+  margin-bottom: 1.2rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+/* line 330, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__input--text:focus {
+  border-color: #31d1e8;
+  outline: 0;
+  background: rgba(49, 209, 232, 0.1);
+}
+/* line 335, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__input--text.input--error {
+  background: transparent;
+  border-color: #FF3838;
+}
+/* line 338, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__input--text.input--error:focus {
+  border-color: #FF3838;
+  background: rgba(255, 56, 56, 0.2);
+  outline-color: #FF3838;
+}
+
+/* line 346, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__form--message {
+  display: none;
+  text-align: center;
+  margin: 2rem 0 19rem;
+}
+/* line 351, ../../src/styles/application/templates/viagens-de-lazer.scss */
+.viagens-de-lazer-interna__form--message h3 {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 0 2rem;
 }
 
 /* line 5, ../../src/styles/application/resources/animations.scss */

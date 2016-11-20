@@ -1,6 +1,6 @@
-<div class="viagens-lazer__masthead opacity-0">
+<div class="viagens-de-lazer__masthead opacity-0">
     <h1 class="viagens-lazer__title animation__masthead--title">
-        <span>VIAGENS<br>DE LAZER</span>
+        <span></span>
         <div class="bullet-left"></div>
         <div class="bullet-top"></div>
     </h1>
@@ -8,70 +8,180 @@
 
 <div class="viagens-lazer__info viagens-de-lazer">
     <div class="row">
-        <div class="col-md-12">
-            <h2>{{titulo}}</h2>
+        <div class="col-md-9">
+            <h2 class="descricao_oferta"></h2>
+        </div>
+        <div class="col-md-3 col-preco">
+            <span class="preco"></p>
+        </span>
+    </div>
 
-            <span>{{preco}}</p>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="internal-title">Sobre</h3>
+
+            <p class="descricao_destino"></p>
         </div>
     </div>
 
-    <div class="row sobre__contact">
-        <div class="col-md-6 sobre__form--box" data-bottom-top="opacity: 0;top:10rem;position:relative;" data-center="opacity:1;top:0;">
-            <h2>AINDA NÃO É<br>
-            CLIENTE?</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="internal-title">Selecione uma opção de hotel</h3>
+        </div>
+    </div>
 
+    <div class="row select-hotel hide" data-hotel="0">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test0" type="checkbox" class="checkbox"><label for="test0"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="row select-hotel hide" data-hotel="1">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test1" type="checkbox" class="checkbox"><label for="test1"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="row select-hotel hide" data-hotel="2">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test2" type="checkbox" class="checkbox"><label for="test2"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="row select-hotel hide" data-hotel="3">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test3" type="checkbox" class="checkbox"><label for="test3"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="row select-hotel hide" data-hotel="4">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test4" type="checkbox" class="checkbox"><label for="test4"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="row select-hotel hide" data-hotel="5">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test5" type="checkbox" class="checkbox"><label for="test5"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="row select-hotel hide" data-hotel="6">
+        <div class="col-md-10">
+            <div class="short-img-hotel">
+                <img src="" alt="" width="100%">
+            </div>
+            
+            <input id="test6" type="checkbox" class="checkbox"><label for="test6"></label>
+        
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+
+
+    <div class="row viagens-de-lazer-interna__contact">
+        <div class="col-md-6 viagens-de-lazer-interna__form--box" data-bottom-top="opacity: 0;top:10rem;position:relative;" data-center="opacity:1;top:0;">
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-8">
-                    <p>Deixe seus dados, nosso especialista de contas entrará em contato em até 24h.</p>  
+                <div class="col-md-12">
+                    <h2>Preencha as informações dos campos ao lado para que possamos encaminhar sua solicitação e contatarmos.</h2>  
                 </div>
             </div>
         </div>
         <div class="col-md-6" data-bottom-top="opacity: 0;top:10rem;position:relative;" data-center="opacity:1;top:0;">
-            <form action="" class="sobre__form sobre__form--box">
+            <form action="" class="viagens-de-lazer-interna__form viagens-de-lazer-interna__form--box">
                 <div class="row">
                     <div class="col-md-12">
-                        <label class="sobre__label">
+                        <label class="viagens-de-lazer-interna__label">
                             <span>Nome:</span>
-                            <input type="text" name="name" maxlength="200" autofocus tabindex="" class="sobre__input--text name required">
+                            <input type="text" name="nome" maxlength="200" tabindex="" class="viagens-de-lazer-interna__input--text name required">
                         </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label class="sobre__label">
+                        <label class="viagens-de-lazer-interna__label">
                             <span>Telefone:</span>
-                            <input type="text" name="phone" maxlength="15" tabindex="" class="sobre__input--text phone required">
+                            <input type="text" name="telefone" maxlength="15" tabindex="" class="viagens-de-lazer-interna__input--text phone required">
                         </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label class="sobre__label">
+                        <label class="viagens-de-lazer-interna__label">
                             <span>E-mail:</span>
-                            <input type="text" name="email" maxlength="200" tabindex="" class="sobre__input--text email required">
+                            <input type="email" name="email" maxlength="200" tabindex="" class="viagens-de-lazer-interna__input--text email required">
                         </label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <label class="sobre__label">
-                            <span>Empresa:</span>
-                            <input type="text" name="company" maxlength="200" tabindex="" class="sobre__input--text company required">
+                    <div class="col-md-6">
+                        <label class="viagens-de-lazer-interna__label">
+                            <span>Data da viagem:</span>
+                            <input type="date" name="data_viagem" maxlength="200" tabindex="" class="viagens-de-lazer-interna__input--text company required">
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="viagens-de-lazer-interna__label">
+                            <span>Adultos:</span>
+                            <input type="number" name="adutos" maxlength="200" tabindex="" class="viagens-de-lazer-interna__input--text company required">
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="viagens-de-lazer-interna__label">
+                            <span>Crianças:</span>
+                            <input type="number" name="criancas" maxlength="200" tabindex="" class="viagens-de-lazer-interna__input--text company required">
                         </label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <button class="btn btn-inline-block" type="submit">RECEBER CONTATO</button>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <button class="btn btn-block" type="submit">ENVIAR</button>
                     </div>
                 </div>
             </form>
         </div>
         <div class="col-md-12">
-            <div class="sobre__form--message">
+            <div class="viagens-de-lazer-interna__form--message">
                 <h3>Suas informações foram enviadas com sucesso!</h3>
-                <button class="btn btn-inline-block sobre__send-new">Enviar outras</button>
+                <button class="btn btn-inline-block viagens-de-lazer-interna__send-new">Enviar outras</button>
             </div>
         </div>
     </div>

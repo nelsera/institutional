@@ -52,6 +52,29 @@
     <!-- build:remove -->
     <script src="scripts/vendors/modernizr/modernizr.js"></script>
     <!-- /build -->
+
+    <script id="entry-template" type="text/x-handlebars-template">
+        {{# each this}}
+        <div class="col-md-4">
+            <h3>{{titulo}}</h3>
+            <div class="short-img">
+                <img src="{{foto_destino}}" alt="" width="100%">
+            </div>
+            <p>
+                <span class="info">{{descricao_oferta}}</span>
+                <span class="price">À vista R$ {{preco}},00<br>10x sem juros R$ {{math preco "/" 10}}</span>
+                <a href="{{config.urls.site}}#/viagem/{{id}}" class="get-more"><span>Saiba mais</span></a>
+            </p>
+        </div>
+        {{/ each}}
+    </script>
+
+    <script id="entry-template-chosen" type="text/x-handlebars-template">
+        <option value="">Selecione um destino</option>
+        {{# each this}}
+            <option value="{{id}}">{{titulo}}</option>
+        {{/ each}}
+    </script>
 </head>
 <body>
     <style>
