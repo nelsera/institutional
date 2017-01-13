@@ -11166,7 +11166,7 @@ a, button {
 
 /* line 112, ../../src/styles/application/templates/home.scss */
 .home__pattern, .home__title--thin {
-  background: url('../images/templates/home/pattern.jpg?1479245647');
+  background: #f5f6f7;
 }
 
 /* line 115, ../../src/styles/application/templates/home.scss */
@@ -11269,13 +11269,13 @@ a, button {
   margin: 0;
   padding: 4rem 7rem 2rem 0;
   position: relative;
-  color: #b7f1fc;
+  color: #d39b6a;
   font-weight: normal;
 }
 
 /* line 210, ../../src/styles/application/templates/home.scss */
 .home__bottom {
-  background: url('../images/templates/home/bottom.jpg?1479245647') 0 bottom/cover no-repeat;
+  background: rgba(211, 155, 106, 0.8);
 }
 
 /* line 214, ../../src/styles/application/templates/home.scss */
@@ -11291,7 +11291,7 @@ a, button {
   position: absolute;
   top: 2rem;
   right: -10.5rem;
-  background: #b7f1fc;
+  background: #d39b6a;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
   width: 6rem;
@@ -11304,7 +11304,7 @@ a, button {
   position: absolute;
   top: 1.2rem;
   right: -11.05rem;
-  background: #b7f1fc;
+  background: #d39b6a;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
   width: 2rem;
@@ -11351,8 +11351,8 @@ a, button {
 
 /* line 274, ../../src/styles/application/templates/home.scss */
 .home__input--text {
-  background: transparent;
-  border: 1px solid #74807e;
+  background: white;
+  border: 1px solid #d39b6a;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -11368,11 +11368,11 @@ a, button {
 .home__input--text:focus {
   border-color: #d39b6a;
   outline-color: #d39b6a;
-  background: rgba(211, 155, 106, 0.1);
+  background: white;
 }
 /* line 289, ../../src/styles/application/templates/home.scss */
 .home__input--text.input--error {
-  background: transparent;
+  background: white;
   border-color: #FF3838;
 }
 /* line 292, ../../src/styles/application/templates/home.scss */
@@ -11398,7 +11398,7 @@ a, button {
 }
 /* line 309, ../../src/styles/application/templates/home.scss */
 .home__input--submit:hover, .home__input--submit:focus, .home__input--submit:active {
-  background: rgba(211, 155, 106, 0.5);
+  background: white;
   color: #d39b6a;
   outline-color: #d39b6a;
 }

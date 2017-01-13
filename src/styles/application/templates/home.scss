@@ -110,7 +110,7 @@
 }
 
 .home__pattern {
-    background: image-url('templates/home/pattern.jpg');
+    background: #f5f6f7;
 }
 .home__consultores {
     background:white;
@@ -203,12 +203,12 @@
     margin: 0;
     padding: 4rem 7rem 2rem 0;
     position: relative;
-    color: #b7f1fc;
+    color: $link;
     font-weight: normal;
 }
 
 .home__bottom{
-    background: image-url('templates/home/bottom.jpg') 0 bottom/cover no-repeat;
+    background: rgba($link,.8);
 }
 
 .home__image--04{
@@ -221,7 +221,7 @@
         position: absolute;
         top: 2rem;
         right: -10.5rem;
-        background: #b7f1fc;
+        background: $link;
         @include opacity(.4);
         width: 6rem;
         height: 6rem;
@@ -232,7 +232,7 @@
         position: absolute;
         top: 1.2rem;
         right: -11.05rem;
-        background: #b7f1fc;
+        background: $link;
         @include opacity(.4);
         width: 2rem;
         height: 2rem;
@@ -272,8 +272,8 @@
     }
 }
 .home__input--text{
-    background: transparent;
-    border: 1px solid #74807e;
+    background: white;
+    border: 1px solid $link;
     @include border-radius(4px);
     width: 100%;
     height: 38px;
@@ -283,11 +283,11 @@
     &:focus{
         border-color: $link;
         outline-color: $link;
-        background: rgba($link, .1);
+        background: white;
     }
 
     &.input--error{
-        background: transparent;
+        background: white;
         border-color: #FF3838;
         &:focus{
             border-color: #FF3838;
@@ -307,7 +307,7 @@
     outline: 0;
     margin-top: 1.8rem;
     &:hover,&:focus, &:active{
-        background: rgba($link,.5);
+        background: white;
         color:$link;
         outline-color: $link;
     }
