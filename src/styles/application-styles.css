@@ -9555,7 +9555,7 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 /* line 56, icons/*.png */
 .icons-sprite, .icons-close, .fancybox-close, .menu__close--link .btn-close {
-  background-image: url('../images/generated/icons-sd725010fe4.png');
+  background-image: url('../images/generated/icons-s4c9628d2ae.png');
   background-repeat: no-repeat;
 }
 
@@ -10384,24 +10384,23 @@ a, button {
 
 /* line 12, ../../src/styles/application/modules/topbar.scss */
 .topbar__logo {
-  margin: 0;
+  margin: .8rem 0 0 0;
   width: 250px;
   height: 82px;
   display: inline-block;
   position: relative;
-  right: 30px;
 }
 
-/* line 20, ../../src/styles/application/modules/topbar.scss */
+/* line 19, ../../src/styles/application/modules/topbar.scss */
 .topbar__logo--link {
   display: block;
 }
-/* line 23, ../../src/styles/application/modules/topbar.scss */
+/* line 22, ../../src/styles/application/modules/topbar.scss */
 .topbar__logo--link:focus {
   outline: 0;
 }
 
-/* line 28, ../../src/styles/application/modules/topbar.scss */
+/* line 27, ../../src/styles/application/modules/topbar.scss */
 .topbar__contact {
   float: right;
   position: relative;
@@ -10410,7 +10409,7 @@ a, button {
   font-family: "proxima_nova_rgregular";
 }
 
-/* line 36, ../../src/styles/application/modules/topbar.scss */
+/* line 35, ../../src/styles/application/modules/topbar.scss */
 .topbar__contact--link {
   font-size: 18px;
   margin-top: 25px;
@@ -10419,7 +10418,7 @@ a, button {
   margin-top: 32px;
 }
 
-/* line 44, ../../src/styles/application/modules/topbar.scss */
+/* line 43, ../../src/styles/application/modules/topbar.scss */
 .topbar__login {
   float: right;
   text-transform: uppercase;
@@ -10434,17 +10433,17 @@ a, button {
   padding: 0 10px;
   margin: 24px 30px 0 0;
 }
-/* line 56, ../../src/styles/application/modules/topbar.scss */
+/* line 55, ../../src/styles/application/modules/topbar.scss */
 .topbar__login:hover {
   background: #d39b6a;
   color: white;
 }
-/* line 61, ../../src/styles/application/modules/topbar.scss */
+/* line 60, ../../src/styles/application/modules/topbar.scss */
 .topbar__login:focus, .topbar__login:active {
   outline-color: #d39b6a;
 }
 
-/* line 66, ../../src/styles/application/modules/topbar.scss */
+/* line 65, ../../src/styles/application/modules/topbar.scss */
 .topbar__menubutton {
   position: relative;
   float: right;
@@ -10469,7 +10468,7 @@ a, button {
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
-/* line 88, ../../src/styles/application/modules/topbar.scss */
+/* line 87, ../../src/styles/application/modules/topbar.scss */
 .topbar__menubutton span {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -10485,7 +10484,7 @@ a, button {
   border-radius: 2px;
 }
 
-/* line 98, ../../src/styles/application/modules/topbar.scss */
+/* line 97, ../../src/styles/application/modules/topbar.scss */
 .topbar__menubutton--login {
   display: block;
   height: 25px;
@@ -10494,12 +10493,12 @@ a, button {
   bottom: 0;
   margin: auto 0;
 }
-/* line 108, ../../src/styles/application/modules/topbar.scss */
+/* line 107, ../../src/styles/application/modules/topbar.scss */
 .topbar__menubutton--login:hover span:first-child, .topbar__menubutton--login:focus span:first-child {
   position: relative;
   bottom: 2px;
 }
-/* line 112, ../../src/styles/application/modules/topbar.scss */
+/* line 111, ../../src/styles/application/modules/topbar.scss */
 .topbar__menubutton--login:hover span:last-child, .topbar__menubutton--login:focus span:last-child {
   position: relative;
   top: 2px;
@@ -11179,29 +11178,27 @@ a, button {
 
 /* line 121, ../../src/styles/application/templates/home.scss */
 .home_margin-left-right {
-  margin-left: 11rem;
-  margin-right: 4rem;
-  margin-bottom: 5.2rem;
+  margin: 4rem 4rem 5.2rem 11rem;
 }
 
 @media (max-width: 768px) {
-  /* line 127, ../../src/styles/application/templates/home.scss */
+  /* line 126, ../../src/styles/application/templates/home.scss */
   .home_margin-left-right {
     display: none;
   }
 }
-/* line 132, ../../src/styles/application/templates/home.scss */
+/* line 131, ../../src/styles/application/templates/home.scss */
 .home__play {
   display: block;
   color: #d39b6a;
   font-size: 1.7rem;
   padding-left: 6rem;
   margin: 5.5rem 0 4rem;
-  background: url('../images/templates/home/arrow.png?1479245647') 0 0/contain no-repeat;
+  background: url('../images/templates/home/arrow.png') 0 0/contain no-repeat;
   position: relative;
   font-family: "proxima_nova_rgregular";
 }
-/* line 141, ../../src/styles/application/templates/home.scss */
+/* line 140, ../../src/styles/application/templates/home.scss */
 .home__play:hover, .home__play:focus {
   color: #d39b6a;
   text-shadow: 0 0 10px rgba(49, 209, 232, 0.6);
@@ -11209,60 +11206,60 @@ a, button {
   background-position: 6px 0;
 }
 
-/* line 149, ../../src/styles/application/templates/home.scss */
+/* line 148, ../../src/styles/application/templates/home.scss */
 .home__image--01 {
   position: relative;
 }
-/* line 151, ../../src/styles/application/templates/home.scss */
+/* line 150, ../../src/styles/application/templates/home.scss */
 .home__image--01 .home__image--01-after {
   content: '';
   display: inline-block;
   position: absolute;
   left: -2.5rem;
   bottom: -2.5rem;
-  background: #b7f1fc;
+  background: rgba(211, 155, 106, 0.5);
   width: 3.5rem;
   height: 3.5rem;
   z-index: 1;
 }
 
-/* line 164, ../../src/styles/application/templates/home.scss */
+/* line 163, ../../src/styles/application/templates/home.scss */
 .home__image--02 {
   position: relative;
   margin-top: 11rem;
 }
-/* line 168, ../../src/styles/application/templates/home.scss */
+/* line 167, ../../src/styles/application/templates/home.scss */
 .home__image--02 div {
   position: relative;
   z-index: 1;
 }
-/* line 173, ../../src/styles/application/templates/home.scss */
+/* line 172, ../../src/styles/application/templates/home.scss */
 .home__image--02 .home__image--02-after {
   content: '';
   display: inline-block;
   position: absolute;
   right: -3.1rem;
   top: -2.5rem;
-  background: #b7f1fc;
+  background: rgba(211, 155, 106, 0.5);
   width: 3.5rem;
   height: 3.5rem;
   z-index: 0;
 }
 
 @media (max-width: 768px) {
-  /* line 186, ../../src/styles/application/templates/home.scss */
+  /* line 185, ../../src/styles/application/templates/home.scss */
   .home__image--02,
   .home__image--03,
   .home__image--04 {
     display: none;
   }
 }
-/* line 193, ../../src/styles/application/templates/home.scss */
+/* line 192, ../../src/styles/application/templates/home.scss */
 .margin-right-3 {
   margin-right: 3rem;
 }
 
-/* line 197, ../../src/styles/application/templates/home.scss */
+/* line 196, ../../src/styles/application/templates/home.scss */
 .home__title--thin {
   font-family: "proxima_novathin";
   text-align: right;
@@ -11276,18 +11273,18 @@ a, button {
   font-weight: normal;
 }
 
-/* line 211, ../../src/styles/application/templates/home.scss */
+/* line 210, ../../src/styles/application/templates/home.scss */
 .home__bottom {
   background: url('../images/templates/home/bottom.jpg?1479245647') 0 bottom/cover no-repeat;
 }
 
-/* line 215, ../../src/styles/application/templates/home.scss */
+/* line 214, ../../src/styles/application/templates/home.scss */
 .home__image--04 {
   position: relative;
   margin-top: 12rem;
   width: 60%;
 }
-/* line 219, ../../src/styles/application/templates/home.scss */
+/* line 218, ../../src/styles/application/templates/home.scss */
 .home__image--04 .home__image--04-before {
   content: '';
   display: inline-block;
@@ -11300,7 +11297,7 @@ a, button {
   width: 6rem;
   height: 6rem;
 }
-/* line 230, ../../src/styles/application/templates/home.scss */
+/* line 229, ../../src/styles/application/templates/home.scss */
 .home__image--04 .home__image--04-after {
   content: '';
   display: inline-block;
@@ -11314,19 +11311,19 @@ a, button {
   height: 2rem;
 }
 
-/* line 243, ../../src/styles/application/templates/home.scss */
+/* line 242, ../../src/styles/application/templates/home.scss */
 .home__list {
   color: white;
   font-size: 1.7rem;
   padding-left: 5rem;
   padding-top: 3rem;
 }
-/* line 248, ../../src/styles/application/templates/home.scss */
+/* line 247, ../../src/styles/application/templates/home.scss */
 .home__list li {
   padding: 1.25rem 0;
 }
 
-/* line 253, ../../src/styles/application/templates/home.scss */
+/* line 252, ../../src/styles/application/templates/home.scss */
 .home__title--contact {
   letter-spacing: .03rem;
   font-family: "proxima_novasemibold";
@@ -11340,19 +11337,19 @@ a, button {
   color: white;
 }
 
-/* line 266, ../../src/styles/application/templates/home.scss */
+/* line 265, ../../src/styles/application/templates/home.scss */
 .home__label {
   display: block;
   color: white;
 }
-/* line 269, ../../src/styles/application/templates/home.scss */
+/* line 268, ../../src/styles/application/templates/home.scss */
 .home__label span {
   font-family: "proxima_novasemibold";
   font-size: 1.3rem;
   display: block;
 }
 
-/* line 275, ../../src/styles/application/templates/home.scss */
+/* line 274, ../../src/styles/application/templates/home.scss */
 .home__input--text {
   background: transparent;
   border: 1px solid #74807e;
@@ -11367,25 +11364,25 @@ a, button {
   box-sizing: border-box;
   padding: 0 10px;
 }
-/* line 284, ../../src/styles/application/templates/home.scss */
+/* line 283, ../../src/styles/application/templates/home.scss */
 .home__input--text:focus {
   border-color: #d39b6a;
   outline-color: #d39b6a;
   background: rgba(211, 155, 106, 0.1);
 }
-/* line 290, ../../src/styles/application/templates/home.scss */
+/* line 289, ../../src/styles/application/templates/home.scss */
 .home__input--text.input--error {
   background: transparent;
   border-color: #FF3838;
 }
-/* line 293, ../../src/styles/application/templates/home.scss */
+/* line 292, ../../src/styles/application/templates/home.scss */
 .home__input--text.input--error:focus {
   border-color: #FF3838;
   background: rgba(255, 56, 56, 0.2);
   outline-color: #FF3838;
 }
 
-/* line 300, ../../src/styles/application/templates/home.scss */
+/* line 299, ../../src/styles/application/templates/home.scss */
 .home__input--submit {
   background: #d39b6a;
   -moz-border-radius: 50%;
@@ -11399,29 +11396,29 @@ a, button {
   outline: 0;
   margin-top: 1.8rem;
 }
-/* line 310, ../../src/styles/application/templates/home.scss */
+/* line 309, ../../src/styles/application/templates/home.scss */
 .home__input--submit:hover, .home__input--submit:focus, .home__input--submit:active {
   background: rgba(211, 155, 106, 0.5);
   color: #d39b6a;
   outline-color: #d39b6a;
 }
 
-/* line 317, ../../src/styles/application/templates/home.scss */
+/* line 316, ../../src/styles/application/templates/home.scss */
 .home__form {
   padding-top: 2.5rem;
 }
-/* line 320, ../../src/styles/application/templates/home.scss */
+/* line 319, ../../src/styles/application/templates/home.scss */
 .home__form div[class*="col-md-"] {
   margin: 0 1rem 3rem;
 }
 
-/* line 324, ../../src/styles/application/templates/home.scss */
+/* line 323, ../../src/styles/application/templates/home.scss */
 .home__form--message {
   display: none;
   text-align: center;
   margin: 3rem 0 4rem;
 }
-/* line 329, ../../src/styles/application/templates/home.scss */
+/* line 328, ../../src/styles/application/templates/home.scss */
 .home__form--message h3 {
   color: white;
   font-family: "proxima_nova_rgregular";
@@ -11429,35 +11426,35 @@ a, button {
   margin: 0 0 2rem;
 }
 
-/* line 337, ../../src/styles/application/templates/home.scss */
+/* line 336, ../../src/styles/application/templates/home.scss */
 .home__bottom--info {
   color: white;
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 5rem;
 }
-/* line 342, ../../src/styles/application/templates/home.scss */
+/* line 341, ../../src/styles/application/templates/home.scss */
 .home__bottom--info a {
   color: inherit;
 }
-/* line 344, ../../src/styles/application/templates/home.scss */
+/* line 343, ../../src/styles/application/templates/home.scss */
 .home__bottom--info a:hover, .home__bottom--info a:focus, .home__bottom--info a:active {
   outline: 0;
   color: #d39b6a;
 }
-/* line 350, ../../src/styles/application/templates/home.scss */
+/* line 349, ../../src/styles/application/templates/home.scss */
 .home__bottom--info a.email {
   font-size: 16px;
   padding-right: 22px;
 }
-/* line 354, ../../src/styles/application/templates/home.scss */
+/* line 353, ../../src/styles/application/templates/home.scss */
 .home__bottom--info span {
   text-align: left;
   display: inline-block;
   position: relative;
   padding-left: 2rem;
 }
-/* line 359, ../../src/styles/application/templates/home.scss */
+/* line 358, ../../src/styles/application/templates/home.scss */
 .home__bottom--info span:before {
   content: '';
   display: inline-block;
@@ -11468,24 +11465,24 @@ a, button {
   height: 1.7rem;
   background: #d39b6a;
 }
-/* line 369, ../../src/styles/application/templates/home.scss */
+/* line 368, ../../src/styles/application/templates/home.scss */
 .home__bottom--info span.endereco {
   font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  /* line 376, ../../src/styles/application/templates/home.scss */
+  /* line 375, ../../src/styles/application/templates/home.scss */
   .home__title, .home__desc {
     font-size: 16px;
   }
 
-  /* line 380, ../../src/styles/application/templates/home.scss */
+  /* line 379, ../../src/styles/application/templates/home.scss */
   .home__consultores {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 385, ../../src/styles/application/templates/home.scss */
+  /* line 384, ../../src/styles/application/templates/home.scss */
   .home__title--thin {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -11493,29 +11490,29 @@ a, button {
     font-size: 18px;
   }
 
-  /* line 392, ../../src/styles/application/templates/home.scss */
+  /* line 391, ../../src/styles/application/templates/home.scss */
   .home__list {
     padding: 15px 15px 15px 40px;
     font-size: 16px;
   }
 
-  /* line 397, ../../src/styles/application/templates/home.scss */
+  /* line 396, ../../src/styles/application/templates/home.scss */
   .home__title--contact {
     font-size: 16px;
   }
 
-  /* line 401, ../../src/styles/application/templates/home.scss */
+  /* line 400, ../../src/styles/application/templates/home.scss */
   .home__label span {
     font-size: 14px;
   }
 
-  /* line 404, ../../src/styles/application/templates/home.scss */
+  /* line 403, ../../src/styles/application/templates/home.scss */
   .home__form {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 408, ../../src/styles/application/templates/home.scss */
+  /* line 407, ../../src/styles/application/templates/home.scss */
   .home__input--submit {
     border-radius: 4px;
     width: 100%;
@@ -11523,12 +11520,12 @@ a, button {
     font-size: 18px;
   }
 
-  /* line 414, ../../src/styles/application/templates/home.scss */
+  /* line 413, ../../src/styles/application/templates/home.scss */
   .home__bottom--info {
     font-size: 14px;
   }
 
-  /* line 417, ../../src/styles/application/templates/home.scss */
+  /* line 416, ../../src/styles/application/templates/home.scss */
   .home__bottom--info span:before {
     display: none;
   }
@@ -11538,7 +11535,7 @@ a, button {
   position: relative;
   width: 100%;
   height: 60rem;
-  background: url('../images/templates/fale-conosco/bg.jpg?1479245647') 0 0/cover no-repeat;
+  background: url('../images/templates/fale-conosco/bg.jpg?1484140436') 0 0/cover no-repeat;
   color: white;
 }
 /* line 8, ../../src/styles/application/templates/fale-conosco.scss */
@@ -11591,7 +11588,7 @@ a, button {
 
 /* line 51, ../../src/styles/application/templates/fale-conosco.scss */
 .fale-conosco__input--text {
-  background: transparent;
+  background: white;
   border: 1px solid #c2c2c2;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -11613,7 +11610,7 @@ a, button {
 }
 /* line 67, ../../src/styles/application/templates/fale-conosco.scss */
 .fale-conosco__input--text.input--error {
-  background: transparent;
+  background: white;
   border-color: #FF3838;
 }
 /* line 70, ../../src/styles/application/templates/fale-conosco.scss */
@@ -11625,7 +11622,7 @@ a, button {
 
 /* line 78, ../../src/styles/application/templates/fale-conosco.scss */
 .fale-conosco__input--textarea {
-  background: transparent;
+  background: white;
   border: 1px solid #c2c2c2;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -11705,6 +11702,11 @@ a, button {
 .fale-conosco__info a:hover, .fale-conosco__info a:focus, .fale-conosco__info a:active {
   border-color: white;
   outline: 0;
+}
+
+/* line 149, ../../src/styles/application/templates/fale-conosco.scss */
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* line 1, ../../src/styles/application/templates/acesso.scss */
@@ -11833,7 +11835,7 @@ a, button {
   position: relative;
   width: 100%;
   height: 25rem;
-  background: url('../images/templates/para-empresa/bg.jpg?1479245647') 0 0/cover no-repeat;
+  background: url('../images/templates/para-empresa/bg.jpg?1484175851') 0 0/cover no-repeat;
   color: white;
   overflow: hidden;
 }
@@ -11969,9 +11971,10 @@ a, button {
 /* line 126, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__video--left {
   background: #f5f6f7;
+  height: 435px;
 }
 
-/* line 130, ../../src/styles/application/templates/para-empresa.scss */
+/* line 131, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__video--video {
   float: right;
   width: 80%;
@@ -11981,7 +11984,7 @@ a, button {
   padding-top: 25px;
   height: 0;
 }
-/* line 138, ../../src/styles/application/templates/para-empresa.scss */
+/* line 139, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__video--video iframe {
   position: absolute;
   top: 0;
@@ -11991,12 +11994,12 @@ a, button {
 }
 
 @media (max-width: 768px) {
-  /* line 147, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 148, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__video--video {
     display: none;
   }
 }
-/* line 152, ../../src/styles/application/templates/para-empresa.scss */
+/* line 153, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__white {
   position: absolute;
   width: 100%;
@@ -12006,7 +12009,7 @@ a, button {
   background: white;
 }
 
-/* line 161, ../../src/styles/application/templates/para-empresa.scss */
+/* line 162, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__video--title {
   font-family: "proxima_novathin";
   text-align: right;
@@ -12016,38 +12019,38 @@ a, button {
   margin: 6rem 4rem 0 0;
 }
 
-/* line 170, ../../src/styles/application/templates/para-empresa.scss */
+/* line 171, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__contact {
   position: relative;
   background: #f5f6f7;
   padding-top: 3rem;
 }
-/* line 175, ../../src/styles/application/templates/para-empresa.scss */
+/* line 176, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__contact p {
   text-align: right;
   font-size: 1.5rem;
   line-height: 1.8rem;
   padding: 0 4rem 0 0;
 }
-/* line 182, ../../src/styles/application/templates/para-empresa.scss */
+/* line 183, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__contact .btn {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
-/* line 188, ../../src/styles/application/templates/para-empresa.scss */
+/* line 189, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__label {
   color: #484747;
   display: block;
 }
-/* line 191, ../../src/styles/application/templates/para-empresa.scss */
+/* line 192, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__label span {
   font-family: "proxima_novasemibold";
   font-size: 1.3rem;
   display: block;
 }
 
-/* line 198, ../../src/styles/application/templates/para-empresa.scss */
+/* line 199, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__input--text {
   background: transparent;
   border: 1px solid #c2c2c2;
@@ -12063,62 +12066,62 @@ a, button {
   box-sizing: border-box;
   padding: 0 10px;
 }
-/* line 208, ../../src/styles/application/templates/para-empresa.scss */
+/* line 209, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__input--text:focus {
   border-color: #d39b6a;
   outline-color: #d39b6a;
   background: rgba(211, 155, 106, 0.1);
 }
-/* line 213, ../../src/styles/application/templates/para-empresa.scss */
+/* line 214, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__input--text.input--error {
   background: transparent;
   border-color: #FF3838;
 }
-/* line 216, ../../src/styles/application/templates/para-empresa.scss */
+/* line 217, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__input--text.input--error:focus {
   border-color: #FF3838;
   background: rgba(255, 56, 56, 0.2);
   outline-color: #FF3838;
 }
 
-/* line 224, ../../src/styles/application/templates/para-empresa.scss */
+/* line 225, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__form--message {
   display: none;
   text-align: center;
   margin: 2rem 0 19rem;
 }
-/* line 229, ../../src/styles/application/templates/para-empresa.scss */
+/* line 230, ../../src/styles/application/templates/para-empresa.scss */
 .para-empresa__form--message h3 {
   font-size: 1.6rem;
   margin: 0 0 2rem;
 }
 
 @media (max-width: 768px) {
-  /* line 236, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 237, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__legend .para-empresa__badge {
     width: 60px;
     height: 60px;
   }
 
-  /* line 240, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 241, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__legend .para-empresa__badge img {
     width: 40px;
     height: 40px;
   }
 
-  /* line 244, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 245, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__legend p {
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 15px;
   }
 
-  /* line 249, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 250, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__video--left {
     background: none;
   }
 
-  /* line 252, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 253, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__video p {
     font-size: 16px;
     line-height: 22px;
@@ -12126,17 +12129,17 @@ a, button {
     padding-right: 5px;
   }
 
-  /* line 258, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 259, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__video p:first-child:before {
     display: none;
   }
 
-  /* line 261, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 262, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__contact {
     background: none;
   }
 
-  /* line 265, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 266, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__contact p {
     text-align: left;
     font-size: 16px;
@@ -12146,12 +12149,12 @@ a, button {
     text-transform: uppercase;
   }
 
-  /* line 273, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 274, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__label span {
     font-size: 14px;
   }
 
-  /* line 276, ../../src/styles/application/templates/para-empresa.scss */
+  /* line 277, ../../src/styles/application/templates/para-empresa.scss */
   .para-empresa__input--text {
     width: 100%;
   }
@@ -12444,7 +12447,7 @@ a, button {
   position: relative;
   width: 100%;
   height: 25rem;
-  background: url('../images/templates/sobre/bg.jpg?1479245647') 0 0/cover no-repeat;
+  background: url('../images/templates/sobre/bg.jpg?1484140436') 0 0/cover no-repeat;
   color: white;
   overflow: hidden;
 }
@@ -12736,7 +12739,7 @@ a, button {
   position: relative;
   width: 100%;
   height: 25rem;
-  background: url('../images/templates/viagens-lazer/bg.jpg?1479245647') 0 0/cover no-repeat;
+  background: url('../images/templates/viagens-lazer/bg.jpg?1484175976') 0 0/cover no-repeat;
   color: white;
   overflow: hidden;
 }

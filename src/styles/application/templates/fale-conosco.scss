@@ -49,7 +49,7 @@
     }
 }
 .fale-conosco__input--text{
-    background: transparent;
+    background: white;
     border: 1px solid #c2c2c2;
     @include border-radius(6px);
     width: 95%;
@@ -65,7 +65,7 @@
     }
 
     &.input--error{
-        background: transparent;
+        background: white;
         border-color: #FF3838;
         &:focus{
             border-color: #FF3838;
@@ -76,7 +76,7 @@
 }
 
 .fale-conosco__input--textarea{
-    background: transparent;
+    background: white;
     border: 1px solid #c2c2c2;
     @include border-radius(6px);
     width: 97.5%;
@@ -144,4 +144,8 @@
             outline: 0;
         }
     }
+
+}
+.text-shadow{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 }

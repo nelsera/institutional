@@ -119,11 +119,10 @@
 }
 
 .home_margin-left-right{
-    margin-left: 11rem;
-    margin-right: 4rem;
-    margin-bottom: 5.2rem;
+    margin: 4rem 4rem 5.2rem 11rem;
 }
-@media(max-width: 768px ){
+
+@media(max-width: 768px){
     .home_margin-left-right{
         display: none;
     }
@@ -154,7 +153,7 @@
         position: absolute;
         left: -2.5rem;
         bottom: -2.5rem;
-        background: #b7f1fc;
+        background: rgba($link,.5);
         width: 3.5rem;
         height: 3.5rem;
         z-index: 1;
@@ -176,7 +175,7 @@
         position: absolute;
         right: -3.1rem;
         top: -2.5rem;
-        background: #b7f1fc;
+        background: rgba($link,.5);
         width: 3.5rem;
         height: 3.5rem;
         z-index: 0;
